@@ -22,7 +22,7 @@ public class Caller {
     }
 
     public synchronized void receiveTheCall(Caller executor) {
-        System.out.println(this.name + ": " + executor.getName() + " has received my call");
+        System.out.println(executor.getName() + " has received the call from " + this.name);
     }
 
 }
